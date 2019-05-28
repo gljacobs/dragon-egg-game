@@ -6,7 +6,7 @@ $(document).ready(function() {
         wins: 0,
         losses: 0,
         reset: function(){
-            this.goal = Math.floor(Math.random() * 50 + 100);
+            this.goal = Math.floor(Math.random() * 100 + 100);
             this.gold = 0;
 
             $("#goal").text(this.goal);

@@ -7,33 +7,37 @@
     <title>Dragon Egg Game</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
-    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Homemade+Apple&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>So you want to hunt for Dragon Eggs eh?</h1>
+    <h1>
+        <img src="assets/images/white-drag.png" alt="">
+        DRAGON EGG HUNT
+        <img id="after-img" src="assets/images/white-drag.png" alt="">
+    </h1>
     <div id="container">
         <div class="instructions">
-            <h2>Instructions</h2>
+            <h2>Instructions for Dragon Egg hunting</h2>
             <p>You will be prompted with an amount of gold you must obtain.</p>
-            <p>There are four type of Dragon Eggs to chose from. Clicking on a Dragon Egg will allot you a specific amount of gold.</p>
+            <p>There are four types of Dragon Eggs to chose from. Clicking on a Dragon Egg will allot you a specific amount of gold.</p>
             <p>In order to win the hunt, your total must match the prompted amount for the hunting session. If you go over the prompted amount you lose the game.</p>
             <p>The value of each of the Dragon Eggs is hidden from you until you click on it.</p>
             <p>Each time a new game starts, the value of the Dragon Eggs change.</p>
         </div>
         <div class="game">
-            <h3 id="goal"></h3>
+            <h2 id="goal"></h3>
             <h3 id="wins">Wins: 0</h3>
             <h3 id="losses">Losses: 0</h3>
             <div class="egg-container">
-                <button class="egg" id="green-egg">Green</button>
-                <button class="egg" id="red-egg">Red</button>
-                <button class="egg" id="gold-egg">Gold</button>
-                <button class="egg" id="mystic-egg">Mystic</button>
+                <img class="egg" id="green-egg" src="assets/images/green-egg.png" alt="">
+                <img class="egg" id="red-egg" src="assets/images/red-egg.png" alt="">
+                <img class="egg" id="gold-egg" src="assets/images/gold-egg.png" alt="">
+                <img class="egg" id="mystic-egg" src="assets/images/mystic-egg.webp" alt="">
             </div>
             <div class="total-score">
                 <p>Youre total gold is:</p>
-                <h3 id="score">0</h3>
+                <h2 id="score">0</h3>
             </div>
         </div>
     </div>
