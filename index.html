@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Carter+One|Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -17,30 +18,41 @@
         <img id="after-img" src="assets/images/white-drag.png" alt="">
     </h1>
     <div id="container">
-        <div class="instructions">
-            <h2>Instructions for Dragon Egg hunting</h2>
-            <p>You will be prompted with an amount of gold you must obtain.</p>
-            <p>There are four types of Dragon Eggs to chose from. Clicking on a Dragon Egg will allot you a specific amount of gold.</p>
-            <p>In order to win the hunt, your total must match the prompted amount for the hunting session. If you go over the prompted amount you lose the game.</p>
-            <p>The value of each of the Dragon Eggs is hidden from you until you click on it.</p>
-            <p>Each time a new game starts, the value of the Dragon Eggs change.</p>
-        </div>
-        <div class="game">
-            <h2 id="goal"></h3>
-            <h3 id="wins">Wins: 0</h3>
-            <h3 id="losses">Losses: 0</h3>
-            <div class="egg-container">
-                <img class="egg" id="green-egg" src="assets/images/green-egg.png" alt="">
-                <img class="egg" id="red-egg" src="assets/images/red-egg.png" alt="">
-                <img class="egg" id="gold-egg" src="assets/images/gold-egg.png" alt="">
-                <img class="egg" id="mystic-egg" src="assets/images/mystic-egg.webp" alt="">
+        <div class="row">
+            <div class="instructions col-md-6">
+                <h2>Instructions for Dragon Egg hunting</h2>
+                <br>
+                <p>You will be prompted with an amount of gold you must obtain.</p>
+                <p>There are four types of Dragon Eggs to cho0se from. Clicking on a Dragon Egg will allot you a specific amount of gold.</p>
+                <p>In order to win the hunt, your total must match the prompted amount for the hunting session. If you go over the prompted amount you lose the game.</p>
+                <p>The value of each of the Dragon Eggs is hidden from you until you click on it.</p>
+                <p>Each time a new game starts, the value of the Dragon Eggs change.</p>
             </div>
-            <div class="total-score">
-                <p>Youre total gold is:</p>
-                <h2 id="score">0</h3>
+            <div class="game col-md-6">
+                <h2 id="goal"></h3>
+                <br>
+                <h3 id="wins">Wins: 0</h3>
+                <h3 id="losses">Losses: 0</h3>
+                <br>
+                <div class="egg-container">
+                    <img class="egg" id="green-egg" src="assets/images/green-egg.png" alt="">
+                    <img class="egg" id="red-egg" src="assets/images/red-egg.png" alt="">
+                    <img class="egg" id="gold-egg" src="assets/images/gold-egg.png" alt="">
+                    <img class="egg" id="mystic-egg" src="assets/images/mystic-egg.webp" alt="">
+                    <br>
+                    <br>
+                </div>
+                <div class="total-score">
+                    <p>Your total gold is:</p>
+                    <h2 id="score">0</h3>
+                </div>
             </div>
         </div>
     </div>
+
     <script src="assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
