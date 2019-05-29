@@ -1,5 +1,4 @@
 body{
-    color: red;
     background-image: url("../images/blackscales.jpg");
     background-size: cover;
     text-align: center;
@@ -10,6 +9,7 @@ h1 {
     font-family: 'Carter One', cursive;
     font-size: 60px;
     margin: 10px 0;
+    color: red;
 }
 
 h1 img {
@@ -31,9 +31,6 @@ h1 img {
     border-style: solid;
     border-width: 3px;
     font-family: 'Homemade Apple', cursive;
-}
-
-.instructions {
 }
 
 .egg {
