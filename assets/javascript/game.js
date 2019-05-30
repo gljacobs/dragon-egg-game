@@ -6,10 +6,10 @@ $(document).ready(function() {
         wins: 0,
         losses: 0,
         reset: function(){
-            this.goal = Math.floor(Math.random() * 100 + 100);
+            this.goal = Math.floor(Math.random() * 75 + 75);
             this.gold = 0;
 
-            $("#goal").text(this.goal);
+            $("#goal").text("Obtain " + this.goal + " gold");
             $("#score").text(this.gold);
 
             $("#green-egg").val("1")
@@ -20,8 +20,6 @@ $(document).ready(function() {
     }
 
     game.reset();
-
-    console.log($("#red-egg").val());
     
     $(".egg").on("click", function(){
         game.gold += parseInt($(this).val());
