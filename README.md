@@ -10,5 +10,6 @@
 * CSS
 * Javascript
 * jQuery
+* Bootstrap
 
 ## Author: Gabriel Jacobs
